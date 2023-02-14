@@ -133,9 +133,6 @@ class BalanceScreen extends StatelessWidget {
           ),
           decoration: BoxDecoration(
             color: Colors.blue[600],
-            borderRadius: BorderRadius.circular(
-              45,
-            ),
           ),
         ),
       ),

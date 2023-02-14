@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class FinalProjectForBegginr extends StatelessWidget {
+class FinalProjectForBegginer extends StatelessWidget {
 
 
   @override
