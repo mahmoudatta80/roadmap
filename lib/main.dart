@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:roadmap/animation/animation_route.dart';
+import 'package:roadmap/animation/page_one.dart';
+import 'package:roadmap/animation/page_three.dart';
 import 'package:roadmap/bmi_calculator/bmi_home_screen.dart';
 import 'package:roadmap/screens/balance_task.dart';
 import 'package:roadmap/screens/final_begginer_project.dart';
@@ -21,7 +24,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: TrainingScreen(),
+      home: PageThree(),
     );
   }
 }
