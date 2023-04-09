@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:roadmap/animation/animation_route.dart';
+import 'package:roadmap/animation/page_three.dart';
 import 'package:roadmap/animation/page_two.dart';
 
 class PageOne extends StatefulWidget {
@@ -19,7 +20,7 @@ class _PageOneState extends State<PageOne> with SingleTickerProviderStateMixin {
     _controller = AnimationController(
       vsync: this,
       duration: const Duration(
-        seconds: 3,
+        seconds: 2,
       ),
     );
     _animation = Tween(
@@ -57,7 +58,7 @@ class _PageOneState extends State<PageOne> with SingleTickerProviderStateMixin {
               AnimatedOpacity(
                 opacity: _animation!.value,
                 duration: const Duration(
-                  seconds: 3,
+                  seconds: 2,
                 ),
                 child: Column(
                   children: [
@@ -65,7 +66,13 @@ class _PageOneState extends State<PageOne> with SingleTickerProviderStateMixin {
                       size: 130,
                     ),
                     MaterialButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.of(context).push(
+                          MaterialPageRoute(
+                            builder: (context) => PageThree(),
+                          ),
+                        );
+                      },
                       child: const Text(
                         'Move to second screen',
                         style: TextStyle(

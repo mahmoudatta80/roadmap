@@ -47,6 +47,7 @@ class _PageThreeState extends State<PageThree>
       ),
     );
     return Scaffold(
+      backgroundColor: Colors.white,
       body: SafeArea(
         child: Center(
           child: AnimatedRotation(
