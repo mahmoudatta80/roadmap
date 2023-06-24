@@ -15,8 +15,8 @@ class RegisterScreen extends StatelessWidget {
               color: Colors.cyanAccent,
               child: Align(
                 alignment: Alignment.topLeft,
-                child: Padding(
-                  padding: const EdgeInsets.all(14.0),
+                child: const Padding(
+                  padding: EdgeInsets.all(14.0),
                   child: Icon(
                     Icons.menu,
                     color: Colors.white,
@@ -36,7 +36,7 @@ class RegisterScreen extends StatelessWidget {
                     // ),
                     Column(
                       children: [
-                        Text(
+                        const Text(
                           'SIGN UP',
                           style: TextStyle(
                             color: Colors.cyanAccent,
@@ -44,7 +44,7 @@ class RegisterScreen extends StatelessWidget {
                             fontWeight: FontWeight.w500,
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 40,
                         ),
                         TextFormField(
@@ -52,9 +52,9 @@ class RegisterScreen extends StatelessWidget {
                             border: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(0),
                             ),
-                            label: Padding(
-                              padding: const EdgeInsets.symmetric(horizontal: 12,),
-                              child: Text(
+                            label: const Padding(
+                              padding: EdgeInsets.symmetric(horizontal: 12,),
+                              child:  Text(
                                 'Email',
                                 style: TextStyle(
                                   color: Colors.grey,
@@ -64,7 +64,7 @@ class RegisterScreen extends StatelessWidget {
                             ),
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 25,
                         ),
                         TextFormField(
@@ -72,8 +72,8 @@ class RegisterScreen extends StatelessWidget {
                             border: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(0),
                             ),
-                            label: Padding(
-                              padding: const EdgeInsets.symmetric(horizontal: 12,),
+                            label: const Padding(
+                              padding: EdgeInsets.symmetric(horizontal: 12,),
                               child: Text(
                                 'Passward',
                                 style: TextStyle(
@@ -84,7 +84,7 @@ class RegisterScreen extends StatelessWidget {
                             ),
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 25,
                         ),
                         TextFormField(
@@ -92,11 +92,11 @@ class RegisterScreen extends StatelessWidget {
                             border: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(0),
                             ),
-                            label: Padding(
-                              padding: const EdgeInsets.symmetric(horizontal: 12,),
-                              child: Text(
+                            label: const Padding(
+                              padding: EdgeInsets.symmetric(horizontal: 12,),
+                              child: const Text(
                                 'Confirm Password',
-                                style: TextStyle(
+                                style: const TextStyle(
                                   color: Colors.grey,
                                   fontWeight: FontWeight.w500,
                                 ),
@@ -104,19 +104,19 @@ class RegisterScreen extends StatelessWidget {
                             ),
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 25,
                         ),
                         Row(
                           children:
                           [
-                            Spacer(),
+                            const Spacer(),
                             Container(
                               width: 130,
                               color: Colors.cyanAccent,
                               child: MaterialButton(
                                 onPressed: (){},
-                                child: Text(
+                                child: const Text(
                                   'Sign Up',
                                   style: TextStyle(
                                     color: Colors.white,
@@ -142,11 +142,12 @@ class RegisterScreen extends StatelessWidget {
                 {
                   Navigator.of(context).pop();
                 },
-                child: Text(
+                child: const Text(
                   'Login',
                   style: TextStyle(
                     color: Colors.white,
                     fontSize: 20,
+                    
                   ),
                 ),
               ),

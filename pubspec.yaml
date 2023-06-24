@@ -36,6 +36,12 @@ dependencies:
   cupertino_icons: ^1.0.2
   rate:
   provider:
+  card_swiper:
+  geolocator:
+  flutter_bloc:
+  sqflite:
+  path:
+  google_maps_flutter:
 
 dev_dependencies:
   flutter_test:
