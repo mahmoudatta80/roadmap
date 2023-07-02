@@ -18,7 +18,7 @@ class _PageTwoState extends State<PageTwo> with SingleTickerProviderStateMixin {
         statusBarIconBrightness: Brightness.dark,
       ),
     );
-    return Scaffold(
+    return const Scaffold(
       backgroundColor: Colors.white,
       body: SafeArea(
         child: Text(''),

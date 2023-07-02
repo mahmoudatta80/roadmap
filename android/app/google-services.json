@@ -1,0 +1,90 @@
+{
+  "project_info": {
+    "project_number": "997472012129",
+    "project_id": "udemy-course-5cd4d",
+    "storage_bucket": "udemy-course-5cd4d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:997472012129:android:273619a4585b69f2dd6720",
+        "android_client_info": {
+          "package_name": "com.flutter.roadmap.roadmap"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "997472012129-v6hjr8dpsfku0abpsdf5m66c5b63nv5p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBK1xa1SIe1-ClYXMBAsb0zCeyCCApGuaM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "997472012129-v6hjr8dpsfku0abpsdf5m66c5b63nv5p.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "997472012129-7c08ebosc3fdvvk909voj33oqemb9876.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.flutter.test.facebook"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:997472012129:android:12a20e58dbcbbb2cdd6720",
+        "android_client_info": {
+          "package_name": "com.flutter.test.facebook"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "997472012129-h01bf0pekb3dfrrperuirsanch60ch4q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.flutter.test.facebook",
+            "certificate_hash": "a59c22001950318bfe55e45e3724e1d82ad023ca"
+          }
+        },
+        {
+          "client_id": "997472012129-v6hjr8dpsfku0abpsdf5m66c5b63nv5p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBK1xa1SIe1-ClYXMBAsb0zCeyCCApGuaM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "997472012129-v6hjr8dpsfku0abpsdf5m66c5b63nv5p.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "997472012129-7c08ebosc3fdvvk909voj33oqemb9876.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.flutter.test.facebook"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

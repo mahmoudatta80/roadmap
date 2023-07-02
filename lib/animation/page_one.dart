@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:roadmap/animation/animation_route.dart';
 import 'package:roadmap/animation/page_three.dart';
-import 'package:roadmap/animation/page_two.dart';
 
 class PageOne extends StatefulWidget {
   const PageOne({Key? key}) : super(key: key);

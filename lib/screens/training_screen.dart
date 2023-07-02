@@ -10,13 +10,13 @@ class TrainingScreen extends StatelessWidget {
         appBar: AppBar(
           backgroundColor: Colors.deepPurple,
           elevation: 0,
-          title: Text(
+          title: const Text(
             'T A P - B A R',
           ),
           centerTitle: true,
         ),
         body: Column(
-          children: [
+          children: const [
             TabBar(
               tabs: [
                 Tab(
