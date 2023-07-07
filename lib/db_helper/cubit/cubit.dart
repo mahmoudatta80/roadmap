@@ -2,16 +2,12 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:roadmap/db_helper/cubit/states.dart';
 import 'package:path/path.dart';
 import 'package:roadmap/db_helper/model/model.dart';
-import 'package:roadmap/state_management/user_information.dart';
 import 'package:sqflite/sqflite.dart';
 
 class MyTestCubit extends Cubit<MyStates> {
   MyTestCubit() : super(MyInitialState());
 
   hello() {
-    print('======================');
-    print('hello1');
-    print('======================');
   }
 
   Database? database;

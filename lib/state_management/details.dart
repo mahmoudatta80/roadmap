@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
 import 'package:roadmap/state_management/user_information.dart';
 
@@ -16,7 +15,7 @@ class Details extends StatelessWidget {
         leading: Consumer<MyModel>(
           builder: (context, value, child) => CircleAvatar(
             backgroundImage: NetworkImage(
-              '${value.imageUrl}',
+              value.imageUrl,
             ),
           ),
         ),
@@ -25,7 +24,7 @@ class Details extends StatelessWidget {
           children: [
             Row(
               children: [
-                Text(
+                const Text(
                   'Hi,',
                   style: TextStyle(
                     fontWeight: FontWeight.w500,
@@ -34,8 +33,8 @@ class Details extends StatelessWidget {
                 ),
                 Consumer<MyModel>(
                   builder: (context, value, child) => Text(
-                    '${value.name}',
-                    style: TextStyle(
+                    value.name,
+                    style: const TextStyle(
                       fontWeight: FontWeight.bold,
                       color: Colors.black,
                     ),
@@ -43,7 +42,7 @@ class Details extends StatelessWidget {
                 ),
               ],
             ),
-            Text(
+            const Text(
               'How is your health',
               style: TextStyle(
                 color: Colors.black54,
@@ -59,7 +58,7 @@ class Details extends StatelessWidget {
               children: [
                 IconButton(
                   onPressed: () {},
-                  icon: Icon(
+                  icon: const Icon(
                     size:30,
                     Icons.shopping_cart_outlined,
                     color: Colors.black,
@@ -73,7 +72,7 @@ class Details extends StatelessWidget {
                     ),
                     child: Text(
                       '${value.counter}',
-                      style: TextStyle(
+                      style: const TextStyle(
                         color: Colors.black,
                         fontWeight: FontWeight.bold,
                         fontSize: 18,
@@ -84,7 +83,7 @@ class Details extends StatelessWidget {
               ],
             ),
           ),
-          SizedBox(
+          const SizedBox(
             width: 10,
           ),
         ],

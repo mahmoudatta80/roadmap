@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class FinalProjectForBegginer extends StatelessWidget {
+  const FinalProjectForBegginer({super.key});
+
 
 
   @override
@@ -41,14 +43,14 @@ class FinalProjectForBegginer extends StatelessWidget {
                                     color: Colors.black12,
                                   ),
                                 ),
-                                child: Icon(
+                                child: const Icon(
                                   Icons.arrow_back_outlined,
                                   size: 20,
                                 ),
                               ),
                               onTap: () {},
                             ),
-                            SizedBox(
+                            const SizedBox(
                               height: 30,
                             ),
                             InkWell(
@@ -63,7 +65,7 @@ class FinalProjectForBegginer extends StatelessWidget {
                                     color: Colors.black12,
                                   ),
                                 ),
-                                child: Image(
+                                child: const Image(
                                   fit: BoxFit.contain,
                                   image: NetworkImage(
                                       'https://m.media-amazon.com/images/I/8107kOhQuOL._AC_SL1500_.jpg',
@@ -72,7 +74,7 @@ class FinalProjectForBegginer extends StatelessWidget {
                               ),
                               onTap: () {},
                             ),
-                            SizedBox(
+                            const SizedBox(
                               height: 15,
                             ),
                             InkWell(
@@ -87,7 +89,7 @@ class FinalProjectForBegginer extends StatelessWidget {
                                     color: Colors.black12,
                                   ),
                                 ),
-                                child: Image(
+                                child: const Image(
                                   fit: BoxFit.contain,
                                   image: NetworkImage(
                                     'https://m.media-amazon.com/images/I/81Z+wr8oj+L._AC_SL1500_.jpg',
@@ -96,7 +98,7 @@ class FinalProjectForBegginer extends StatelessWidget {
                               ),
                               onTap: () {},
                             ),
-                            SizedBox(
+                            const SizedBox(
                               height: 15,
                             ),
                             InkWell(
@@ -111,7 +113,7 @@ class FinalProjectForBegginer extends StatelessWidget {
                                     color: Colors.black12,
                                   ),
                                 ),
-                                child: Image(
+                                child: const Image(
                                   fit: BoxFit.contain,
                                   image: NetworkImage(
                                     'https://m.media-amazon.com/images/I/715c1GJnf+L._AC_SL1500_.jpg',
@@ -120,7 +122,7 @@ class FinalProjectForBegginer extends StatelessWidget {
                               ),
                               onTap: () {},
                             ),
-                            SizedBox(
+                            const SizedBox(
                               height: 15,
                             ),
                             InkWell(
@@ -135,7 +137,7 @@ class FinalProjectForBegginer extends StatelessWidget {
                                     color: Colors.black12,
                                   ),
                                 ),
-                                child: Image(
+                                child: const Image(
                                   fit: BoxFit.contain,
                                   image: NetworkImage(
                                     'https://m.media-amazon.com/images/I/81WFOOJNWKL._AC_SL1500_.jpg',
@@ -149,7 +151,7 @@ class FinalProjectForBegginer extends StatelessWidget {
                       ),
                       Expanded(
                         child: Container(
-                          decoration: BoxDecoration(
+                          decoration: const BoxDecoration(
                             borderRadius: BorderRadiusDirectional.only(
                               bottomStart: Radius.circular(15),
                             ),
@@ -159,7 +161,7 @@ class FinalProjectForBegginer extends StatelessWidget {
                             child: Stack(
                               alignment: Alignment.topRight,
                               children: [
-                                Center(
+                                const Center(
                                   child: Image(
                                     height: 200,
                                     image: NetworkImage(
@@ -179,7 +181,7 @@ class FinalProjectForBegginer extends StatelessWidget {
                                         color: Colors.black12,
                                       ),
                                     ),
-                                    child: Icon(
+                                    child: const Icon(
                                       Icons.favorite_border_outlined,
                                       size: 20,
                                     ),
@@ -203,14 +205,14 @@ class FinalProjectForBegginer extends StatelessWidget {
                           Row(
                             children:
                             [
-                              Text(
+                              const Text(
                                   'Sony Wh-1000XM4',
                                 style: TextStyle(
                                   fontSize: 24,
                                   fontWeight: FontWeight.bold,
                                 ),
                               ),
-                              Spacer(),
+                              const Spacer(),
                               Container(
                                 height: 25,
                                 width: 50,
@@ -222,8 +224,8 @@ class FinalProjectForBegginer extends StatelessWidget {
                                     5,
                                   ),
                                 ),
-                                child: Padding(
-                                  padding: const EdgeInsetsDirectional.only(
+                                child: const Padding(
+                                  padding: EdgeInsetsDirectional.only(
                                     start: 5,
                                     end: 5,
                                   ),
@@ -249,10 +251,10 @@ class FinalProjectForBegginer extends StatelessWidget {
                               ),
                             ],
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 15,
                           ),
-                          Text(
+                          const Text(
                               'Lorem Ipsum is simply dummy text of the printing and typesetting industry .',
                             style: TextStyle(
                               fontSize: 15,
@@ -260,7 +262,7 @@ class FinalProjectForBegginer extends StatelessWidget {
                               color: Colors.black54,
                             ),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 20,
                           ),
                           Row(
@@ -283,36 +285,36 @@ class FinalProjectForBegginer extends StatelessWidget {
                                   color: Colors.pinkAccent[200],
                                 ),
                               ),
-                              SizedBox(
+                              const SizedBox(
                                 width: 15,
                               ),
-                              Text(
+                              const Text(
                                 'Product Specification',
                                 style: TextStyle(
                                   fontSize: 15,
                                   fontWeight: FontWeight.w600,
                                 ),
                               ),
-                              Spacer(),
+                              const Spacer(),
                               IconButton(
                                 onPressed: (){},
-                                icon: Icon(
+                                icon: const Icon(
                                   Icons.arrow_forward_ios_outlined,
                                   size: 19,
                                 ),
                               ),
                             ],
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 15,
                           ),
                           Container(
                             height: 1,
-                            decoration: BoxDecoration(
+                            decoration: const BoxDecoration(
                               color: Colors.black12,
                             ),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 15,
                           ),
                           Row(
@@ -335,17 +337,17 @@ class FinalProjectForBegginer extends StatelessWidget {
                                   color: Colors.pinkAccent[200],
                                 ),
                               ),
-                              SizedBox(
+                              const SizedBox(
                                 width: 15,
                               ),
-                              Text(
+                              const Text(
                                 'Colors',
                                 style: TextStyle(
                                   fontSize: 15,
                                   fontWeight: FontWeight.w600,
                                 ),
                               ),
-                              SizedBox(
+                              const SizedBox(
                                 width: 150,
                               ),
                               Container(
@@ -360,7 +362,7 @@ class FinalProjectForBegginer extends StatelessWidget {
                                   ),
                                 ),
                               ),
-                              SizedBox(
+                              const SizedBox(
                                 width: 6,
                               ),
                               Container(
@@ -371,7 +373,7 @@ class FinalProjectForBegginer extends StatelessWidget {
                                   color: Colors.grey.shade400,
                                 ),
                               ),
-                              SizedBox(
+                              const SizedBox(
                                 width: 6,
                               ),
                               Container(
@@ -388,24 +390,24 @@ class FinalProjectForBegginer extends StatelessWidget {
                               ),
                             ],
                           ),
-                          Spacer(),
+                          const Spacer(),
                           Row(
                             children:
                             [
-                              Text(
+                              const Text(
                                   '\$349.',
                                 style: TextStyle(
                                   fontSize: 25,
                                   fontWeight: FontWeight.bold,
                                 ),
                               ),
-                              Text(
+                              const Text(
                                 '99',
                                 style: TextStyle(
                                   fontSize: 17,
                                 ),
                               ),
-                              Spacer(),
+                              const Spacer(),
                               Container(
                                 width: 170,
                                 height: 47,
@@ -415,8 +417,8 @@ class FinalProjectForBegginer extends StatelessWidget {
                                     15,
                                   ),
                                 ),
-                                child: Padding(
-                                  padding: const EdgeInsetsDirectional.only(
+                                child: const Padding(
+                                  padding: EdgeInsetsDirectional.only(
                                     start: 25,
                                   ),
                                   child: Row(

@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 
+// ignore: must_be_immutable
 class ResultScreen extends StatelessWidget
 {
   double? result;
-  ResultScreen({this.result});
+  ResultScreen({super.key, this.result});
 
   @override
   Widget build(BuildContext context) {
@@ -19,7 +20,7 @@ class ResultScreen extends StatelessWidget
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children:
                   [
-                    Text(
+                    const Text(
                       'Your Result',
                     style: TextStyle(
                       color: Colors.white,
@@ -27,7 +28,7 @@ class ResultScreen extends StatelessWidget
                       fontWeight: FontWeight.bold,
                     ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 20,
                     ),
                     Expanded(
@@ -49,23 +50,23 @@ class ResultScreen extends StatelessWidget
                                 fontWeight: FontWeight.bold,
                               ),
                             ),
-                            SizedBox(
+                            const SizedBox(
                               height: 70,
                             ),
                             Text(
-                              '${result!.toStringAsFixed(1)}',
-                              style: TextStyle(
+                              result!.toStringAsFixed(1),
+                              style: const TextStyle(
                                 color: Colors.white,
                                 fontSize: 75,
                                 fontWeight: FontWeight.bold,
                               ),
                             ),
-                            SizedBox(
+                            const SizedBox(
                               height: 70,
                             ),
                             Text(
                               'You have a ${checkState(result!)} body weight.',
-                              style: TextStyle(
+                              style: const TextStyle(
                                 color: Colors.white,
                                 fontSize: 17,
                                 fontWeight: FontWeight.bold,
@@ -73,7 +74,7 @@ class ResultScreen extends StatelessWidget
                             ),
                             Text(
                               kindOfJob(result!),
-                              style: TextStyle(
+                              style: const TextStyle(
                                 color: Colors.white,
                                 fontSize: 17,
                                 fontWeight: FontWeight.bold,
@@ -89,12 +90,16 @@ class ResultScreen extends StatelessWidget
             ),
             Container(
               width: double.infinity,
+              decoration: const BoxDecoration(
+                color: Colors.teal,
+                shape: BoxShape.rectangle,
+              ),
               child: MaterialButton(
                 onPressed: ()
                 {
                   Navigator.of(context).pop();
                 },
-                child: Text(
+                child: const Text(
                   'RE-CALCULATE',
                   style: TextStyle(
                     color: Colors.white,
@@ -102,10 +107,6 @@ class ResultScreen extends StatelessWidget
                     fontSize: 24,
                   ),
                 ),
-              ),
-              decoration: BoxDecoration(
-                color: Colors.teal,
-                shape: BoxShape.rectangle,
               ),
             ),
           ],

@@ -11,7 +11,6 @@ class PageThree extends StatefulWidget {
 class _PageThreeState extends State<PageThree>
     with SingleTickerProviderStateMixin {
   AnimationController? _controller;
-  AnimationController? _controller2;
   Animation? _animation;
   Animation? _animation2;
 

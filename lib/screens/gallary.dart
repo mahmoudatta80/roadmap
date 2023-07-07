@@ -1,14 +1,15 @@
 import 'package:flutter/material.dart';
 
-class Gallary extends StatelessWidget {
+class Gallery extends StatelessWidget {
+  const Gallery({super.key});
+
 
   @override
   Widget build(BuildContext context) {
-    List<int> count = List.generate(5, (index) => 1);
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.white,
-        title: Text(
+        title: const Text(
           'Gallary',
           style: TextStyle(
             color: Colors.brown,
@@ -18,8 +19,8 @@ class Gallary extends StatelessWidget {
         elevation: 0,
       ),
       body: GridView.count(
-        physics: BouncingScrollPhysics(),
-        padding: EdgeInsets.all(
+        physics: const BouncingScrollPhysics(),
+        padding: const EdgeInsets.all(
           10,
         ),
         crossAxisCount: 2,
@@ -36,7 +37,7 @@ class Gallary extends StatelessWidget {
                 20,
               ),
             ),
-            child: Image(
+            child: const Image(
               fit: BoxFit.cover,
               image: AssetImage(
                 'assets/images/img1.jpg',
@@ -52,7 +53,7 @@ class Gallary extends StatelessWidget {
                 20,
               ),
             ),
-            child: Image(
+            child: const Image(
               fit: BoxFit.cover,
               image: AssetImage(
                 'assets/images/img2.jpg',
@@ -68,7 +69,7 @@ class Gallary extends StatelessWidget {
                 20,
               ),
             ),
-            child: Image(
+            child: const Image(
               fit: BoxFit.cover,
               image: AssetImage(
                 'assets/images/img3.jpg',
@@ -84,7 +85,7 @@ class Gallary extends StatelessWidget {
                 20,
               ),
             ),
-            child: Image(
+            child: const Image(
               fit: BoxFit.cover,
               image: AssetImage(
                 'assets/images/img1.jpg',
@@ -100,7 +101,7 @@ class Gallary extends StatelessWidget {
                 20,
               ),
             ),
-            child: Image(
+            child: const Image(
               fit: BoxFit.cover,
               image: AssetImage(
                 'assets/images/img2.jpg',
@@ -116,7 +117,7 @@ class Gallary extends StatelessWidget {
                 20,
               ),
             ),
-            child: Image(
+            child: const Image(
               fit: BoxFit.cover,
               image: AssetImage(
                 'assets/images/img3.jpg',
@@ -132,7 +133,7 @@ class Gallary extends StatelessWidget {
                 20,
               ),
             ),
-            child: Image(
+            child: const Image(
               fit: BoxFit.cover,
               image: AssetImage(
                 'assets/images/img1.jpg',
@@ -148,7 +149,7 @@ class Gallary extends StatelessWidget {
                 20,
               ),
             ),
-            child: Image(
+            child: const Image(
               fit: BoxFit.cover,
               image: AssetImage(
                 'assets/images/img2.jpg',
@@ -164,7 +165,7 @@ class Gallary extends StatelessWidget {
                 20,
               ),
             ),
-            child: Image(
+            child: const Image(
               fit: BoxFit.cover,
               image: AssetImage(
                 'assets/images/img3.jpg',
@@ -180,7 +181,7 @@ class Gallary extends StatelessWidget {
                 20,
               ),
             ),
-            child: Image(
+            child: const Image(
               fit: BoxFit.cover,
               image: AssetImage(
                 'assets/images/img1.jpg',
@@ -196,7 +197,7 @@ class Gallary extends StatelessWidget {
                 20,
               ),
             ),
-            child: Image(
+            child: const Image(
               fit: BoxFit.cover,
               image: AssetImage(
                 'assets/images/img2.jpg',
@@ -212,7 +213,7 @@ class Gallary extends StatelessWidget {
                 20,
               ),
             ),
-            child: Image(
+            child: const Image(
               fit: BoxFit.cover,
               image: AssetImage(
                 'assets/images/img3.jpg',
@@ -228,7 +229,7 @@ class Gallary extends StatelessWidget {
                 20,
               ),
             ),
-            child: Image(
+            child: const Image(
               fit: BoxFit.cover,
               image: AssetImage(
                 'assets/images/img1.jpg',
@@ -244,7 +245,7 @@ class Gallary extends StatelessWidget {
                 20,
               ),
             ),
-            child: Image(
+            child: const Image(
               fit: BoxFit.cover,
               image: AssetImage(
                 'assets/images/img2.jpg',
@@ -260,7 +261,7 @@ class Gallary extends StatelessWidget {
                 20,
               ),
             ),
-            child: Image(
+            child: const Image(
               fit: BoxFit.cover,
               image: AssetImage(
                 'assets/images/img3.jpg',
@@ -276,7 +277,7 @@ class Gallary extends StatelessWidget {
                 20,
               ),
             ),
-            child: Image(
+            child: const Image(
               fit: BoxFit.cover,
               image: AssetImage(
                 'assets/images/img1.jpg',
@@ -292,7 +293,7 @@ class Gallary extends StatelessWidget {
                 20,
               ),
             ),
-            child: Image(
+            child: const Image(
               fit: BoxFit.cover,
               image: AssetImage(
                 'assets/images/img2.jpg',
@@ -308,7 +309,7 @@ class Gallary extends StatelessWidget {
                 20,
               ),
             ),
-            child: Image(
+            child: const Image(
               fit: BoxFit.cover,
               image: AssetImage(
                 'assets/images/img3.jpg',
@@ -324,7 +325,7 @@ class Gallary extends StatelessWidget {
                 20,
               ),
             ),
-            child: Image(
+            child: const Image(
               fit: BoxFit.cover,
               image: AssetImage(
                 'assets/images/img1.jpg',
@@ -340,7 +341,7 @@ class Gallary extends StatelessWidget {
                 20,
               ),
             ),
-            child: Image(
+            child: const Image(
               fit: BoxFit.cover,
               image: AssetImage(
                 'assets/images/img2.jpg',
@@ -356,7 +357,7 @@ class Gallary extends StatelessWidget {
                 20,
               ),
             ),
-            child: Image(
+            child: const Image(
               fit: BoxFit.cover,
               image: AssetImage(
                 'assets/images/img3.jpg',
@@ -372,7 +373,7 @@ class Gallary extends StatelessWidget {
                 20,
               ),
             ),
-            child: Image(
+            child: const Image(
               fit: BoxFit.cover,
               image: AssetImage(
                 'assets/images/img1.jpg',
@@ -388,7 +389,7 @@ class Gallary extends StatelessWidget {
                 20,
               ),
             ),
-            child: Image(
+            child: const Image(
               fit: BoxFit.cover,
               image: AssetImage(
                 'assets/images/img2.jpg',
@@ -404,7 +405,7 @@ class Gallary extends StatelessWidget {
                 20,
               ),
             ),
-            child: Image(
+            child: const Image(
               fit: BoxFit.cover,
               image: AssetImage(
                 'assets/images/img3.jpg',
@@ -420,7 +421,7 @@ class Gallary extends StatelessWidget {
                 20,
               ),
             ),
-            child: Image(
+            child: const Image(
               fit: BoxFit.cover,
               image: AssetImage(
                 'assets/images/img1.jpg',
@@ -436,7 +437,7 @@ class Gallary extends StatelessWidget {
                 20,
               ),
             ),
-            child: Image(
+            child: const Image(
               fit: BoxFit.cover,
               image: AssetImage(
                 'assets/images/img2.jpg',
@@ -452,7 +453,7 @@ class Gallary extends StatelessWidget {
                 20,
               ),
             ),
-            child: Image(
+            child: const Image(
               fit: BoxFit.cover,
               image: AssetImage(
                 'assets/images/img3.jpg',
@@ -468,7 +469,7 @@ class Gallary extends StatelessWidget {
                 20,
               ),
             ),
-            child: Image(
+            child: const Image(
               fit: BoxFit.cover,
               image: AssetImage(
                 'assets/images/img1.jpg',
@@ -484,7 +485,7 @@ class Gallary extends StatelessWidget {
                 20,
               ),
             ),
-            child: Image(
+            child: const Image(
               fit: BoxFit.cover,
               image: AssetImage(
                 'assets/images/img2.jpg',
@@ -500,7 +501,7 @@ class Gallary extends StatelessWidget {
                 20,
               ),
             ),
-            child: Image(
+            child: const Image(
               fit: BoxFit.cover,
               image: AssetImage(
                 'assets/images/img3.jpg',

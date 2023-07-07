@@ -1,12 +1,17 @@
 import 'package:flutter/material.dart';
 
 class BalanceScreen extends StatelessWidget {
+  const BalanceScreen({super.key});
+
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
         child: Container(
+          decoration: BoxDecoration(
+            color: Colors.blue[600],
+          ),
           child: Center(
             child: Padding(
               padding: const EdgeInsets.all(20.0),
@@ -18,13 +23,13 @@ class BalanceScreen extends StatelessWidget {
                     [
                       IconButton(
                         onPressed: (){},
-                        icon: Icon(
+                        icon: const Icon(
                           Icons.menu_outlined,
                           color: Colors.white,
                           size: 30,
                         ),
                       ),
-                      Expanded(
+                      const Expanded(
                         child: Center(
                           child: Text(
                             'Your Balance',
@@ -38,7 +43,7 @@ class BalanceScreen extends StatelessWidget {
                       ),
                       IconButton(
                         onPressed: (){},
-                        icon: Icon(
+                        icon: const Icon(
                           Icons.settings,
                           color: Colors.white,
                           size: 30,
@@ -46,10 +51,10 @@ class BalanceScreen extends StatelessWidget {
                       ),
                     ],
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 100,
                   ),
-                  CircleAvatar(
+                  const CircleAvatar(
                     radius: 60,
                     backgroundColor: Colors.white,
                     child: Icon(
@@ -58,10 +63,10 @@ class BalanceScreen extends StatelessWidget {
                       color: Colors.cyan,
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 15,
                   ),
-                  Text(
+                  const Text(
                     'Mahmoud Atta',
                     style: TextStyle(
                       color: Colors.white,
@@ -69,10 +74,10 @@ class BalanceScreen extends StatelessWidget {
                       fontSize: 25,
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 3,
                   ),
-                  Text(
+                  const Text(
                     'mahmoudatta@gmail.com',
                     style: TextStyle(
                       color: Colors.white,
@@ -80,15 +85,21 @@ class BalanceScreen extends StatelessWidget {
                       fontSize: 18,
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 15,
                   ),
                   Container(
+                    width: 270,
+                    height: 110,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(15),
+                      color: Colors.white,
+                    ),
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children:
                       [
-                        Text(
+                        const Text(
                           'BALANCE',
                           style: TextStyle(
                             color: Colors.cyan,
@@ -106,33 +117,24 @@ class BalanceScreen extends StatelessWidget {
                         MaterialButton(
                           height: 30,
                           color: Colors.blue[900],
-                          child: Text(
+                          onPressed: (){},
+                          shape: UnderlineInputBorder(
+                            borderRadius: BorderRadius.circular(5),
+                          ),
+                          child: const Text(
                             'TRANSFER',
                             style: TextStyle(
                               color: Colors.white,
                               letterSpacing: 1,
                             ),
                           ),
-                          onPressed: (){},
-                          shape: UnderlineInputBorder(
-                            borderRadius: BorderRadius.circular(5),
-                          ),
                         ),
                       ],
-                    ),
-                    width: 270,
-                    height: 110,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(15),
-                      color: Colors.white,
                     ),
                   ),
                 ],
               ),
             ),
-          ),
-          decoration: BoxDecoration(
-            color: Colors.blue[600],
           ),
         ),
       ),

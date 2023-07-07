@@ -1,6 +1,5 @@
 
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
 import 'package:roadmap/state_management/details.dart';
 import 'package:roadmap/state_management/user_information.dart';
@@ -20,7 +19,7 @@ class Welcome extends StatelessWidget {
               Consumer<MyModel>(
                 builder: (context, value, child) => Text(
                   'Welcome ${value.name} your mail is ${value.email} and your phone is ${value.mobileNumber}',
-                  style: TextStyle(
+                  style: const TextStyle(
                     fontSize: 25,
                   ),
                 ),
@@ -55,7 +54,7 @@ class Welcome extends StatelessWidget {
                   ),
                 ],
               ),
-              SizedBox(
+              const SizedBox(
                 height: 50,
               ),
               ElevatedButton(
@@ -66,7 +65,7 @@ class Welcome extends StatelessWidget {
                 ),
                 onPressed: () {
                   Navigator.of(context).push(
-                    MaterialPageRoute(builder: (context) => Details(),),
+                    MaterialPageRoute(builder: (context) => const Details(),),
                   );
                 },
                 child: const Text(

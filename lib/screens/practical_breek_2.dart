@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:rate/rate.dart';
 
 class PracticalBreek extends StatefulWidget {
+  const PracticalBreek({super.key});
+
 
   @override
   State<PracticalBreek> createState() => _PracticalBreekState();
@@ -20,7 +22,7 @@ class _PracticalBreekState extends State<PracticalBreek> {
         backgroundColor: Colors.grey[900],
         leading: IconButton(
           onPressed: (){},
-          icon: Icon(
+          icon: const Icon(
             Icons.arrow_back_ios_rounded,
             size: 20,
           ),
@@ -28,14 +30,14 @@ class _PracticalBreekState extends State<PracticalBreek> {
         actions: [
           IconButton(
             onPressed: (){},
-            icon: Icon(
+            icon: const Icon(
               Icons.favorite_border_outlined,
               size: 25,
             ),
           ),
           IconButton(
             onPressed: (){},
-            icon: Icon(
+            icon: const Icon(
               Icons.shopping_bag_outlined,
               size: 25,
             ),
@@ -54,16 +56,16 @@ class _PracticalBreekState extends State<PracticalBreek> {
                 ),
                 child: Container(
                   height: 320,
-                  child: Image(
-                    image: AssetImage(
-                      'assets/images/belguim.jpg',
-                    ),
-                  ),
                   clipBehavior: Clip.antiAliasWithSaveLayer,
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     borderRadius: BorderRadius.only(
                       topRight: Radius.circular(15),
                       bottomRight: Radius.circular(15),
+                    ),
+                  ),
+                  child: const Image(
+                    image: AssetImage(
+                      'assets/images/belguim.jpg',
                     ),
                   ),
                 ),
@@ -72,7 +74,7 @@ class _PracticalBreekState extends State<PracticalBreek> {
                 child: Column(
                   children: [
                     Container(
-                      margin: EdgeInsetsDirectional.only(
+                      margin: const EdgeInsetsDirectional.only(
                         bottom: 20,
                       ),
                       height: 38,
@@ -81,7 +83,7 @@ class _PracticalBreekState extends State<PracticalBreek> {
                         color: Colors.blueGrey,
                         borderRadius: BorderRadius.circular(8,),
                       ),
-                      child: Center(
+                      child: const Center(
                         child: Text(
                           's',
                           style: TextStyle(
@@ -93,7 +95,7 @@ class _PracticalBreekState extends State<PracticalBreek> {
                       ),
                     ),
                     Container(
-                      margin: EdgeInsetsDirectional.only(
+                      margin: const EdgeInsetsDirectional.only(
                         bottom: 20,
                       ),
                       height: 38,
@@ -102,7 +104,7 @@ class _PracticalBreekState extends State<PracticalBreek> {
                         color: Colors.blueGrey,
                         borderRadius: BorderRadius.circular(8,),
                       ),
-                      child: Center(
+                      child: const Center(
                         child: Text(
                           'L',
                           style: TextStyle(
@@ -114,7 +116,7 @@ class _PracticalBreekState extends State<PracticalBreek> {
                       ),
                     ),
                     Container(
-                      margin: EdgeInsetsDirectional.only(
+                      margin: const EdgeInsetsDirectional.only(
                         bottom: 20,
                       ),
                       height: 38,
@@ -123,7 +125,7 @@ class _PracticalBreekState extends State<PracticalBreek> {
                         color: Colors.red,
                         borderRadius: BorderRadius.circular(8,),
                       ),
-                      child: Center(
+                      child: const Center(
                         child: Text(
                           'm',
                           style: TextStyle(
@@ -135,7 +137,7 @@ class _PracticalBreekState extends State<PracticalBreek> {
                       ),
                     ),
                     Container(
-                      margin: EdgeInsetsDirectional.only(
+                      margin: const EdgeInsetsDirectional.only(
                         bottom: 20,
                       ),
                       height: 38,
@@ -144,7 +146,7 @@ class _PracticalBreekState extends State<PracticalBreek> {
                         color: Colors.blueGrey,
                         borderRadius: BorderRadius.circular(8,),
                       ),
-                      child: Center(
+                      child: const Center(
                         child: Text(
                           'XL',
                           style: TextStyle(
@@ -156,7 +158,7 @@ class _PracticalBreekState extends State<PracticalBreek> {
                       ),
                     ),
                     Container(
-                      margin: EdgeInsetsDirectional.only(
+                      margin: const EdgeInsetsDirectional.only(
                         bottom: 20,
                       ),
                       height: 38,
@@ -165,7 +167,7 @@ class _PracticalBreekState extends State<PracticalBreek> {
                         color: Colors.blueGrey,
                         borderRadius: BorderRadius.circular(8,),
                       ),
-                      child: Center(
+                      child: const Center(
                         child: Text(
                           '2XL',
                           style: TextStyle(
@@ -187,7 +189,7 @@ class _PracticalBreekState extends State<PracticalBreek> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text(
+                  const Text(
                       'Belgium Euro',
                     style: TextStyle(
                       color: Colors.white,
@@ -196,10 +198,10 @@ class _PracticalBreekState extends State<PracticalBreek> {
                       fontWeight: FontWeight.bold,
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 5,
                   ),
-                  Text(
+                  const Text(
                       '20/21  Away by Adidas',
                     style: TextStyle(
                       color: Colors.blueGrey,
@@ -208,7 +210,7 @@ class _PracticalBreekState extends State<PracticalBreek> {
                       fontWeight: FontWeight.bold,
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 30,
                   ),
                   Row(
@@ -218,27 +220,30 @@ class _PracticalBreekState extends State<PracticalBreek> {
                         initialValue: 4,
                         onChange: (v)
                         {
-                          print(v);
                           setState(() {
                             x=v;
                           });
                         },
                       ),
-                      SizedBox(
+                      const SizedBox(
                         width: 8,
                       ),
                       Text(
                         x.toString(),
-                        style: TextStyle(
+                        style: const TextStyle(
                           color: Colors.white,
                           fontFamily: 'AudioWide',
                           fontWeight: FontWeight.w600,
                         ),
                       ),
-                      Spacer(),
+                      const Spacer(),
                       Container(
-                        padding: EdgeInsets.all(8),
+                        padding: const EdgeInsets.all(8),
                         width: 130,
+                        decoration: BoxDecoration(
+                          color: Colors.blueGrey,
+                          borderRadius: BorderRadius.circular(10),
+                        ),
                         child: Center(
                           child: Row(
                             children: [
@@ -256,23 +261,23 @@ class _PracticalBreekState extends State<PracticalBreek> {
                                     color: Colors.red,
                                     borderRadius: BorderRadius.circular(5),
                                   ),
-                                  child: Icon(
+                                  child: const Icon(
                                     Icons.remove,
                                     color: Colors.white,
                                   ),
                                 ),
                               ),
-                              Spacer(),
+                              const Spacer(),
                               Text(
                                 y.toString(),
-                                style: TextStyle(
+                                style: const TextStyle(
                                   color: Colors.white,
                                   fontSize: 20,
                                   fontFamily: 'AudioWide',
                                   fontWeight: FontWeight.w600,
                                 ),
                               ),
-                              Spacer(),
+                              const Spacer(),
                               InkWell(
                                 onTap: ()
                                 {
@@ -287,7 +292,7 @@ class _PracticalBreekState extends State<PracticalBreek> {
                                     color: Colors.red,
                                     borderRadius: BorderRadius.circular(5),
                                   ),
-                                  child: Icon(
+                                  child: const Icon(
                                     Icons.add,
                                     color: Colors.white,
                                   ),
@@ -296,20 +301,16 @@ class _PracticalBreekState extends State<PracticalBreek> {
                             ],
                           ),
                         ),
-                        decoration: BoxDecoration(
-                          color: Colors.blueGrey,
-                          borderRadius: BorderRadius.circular(10),
-                        ),
                       ),
                     ],
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 30,
                   ),
                   Row(
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
-                      Column(
+                      const Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(
@@ -398,12 +399,16 @@ class _PracticalBreekState extends State<PracticalBreek> {
                           ),
                         ],
                       ),
-                      Spacer(),
+                      const Spacer(),
                       Container(
                         height: 115,
                         width: 90,
+                        decoration: BoxDecoration(
+                          color: Colors.red,
+                          borderRadius: BorderRadius.circular(20),
+                        ),
                         //padding: EdgeInsets.all(20),
-                        child: Column(
+                        child: const Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Icon(
@@ -423,10 +428,6 @@ class _PracticalBreekState extends State<PracticalBreek> {
                               ),
                             ),
                           ],
-                        ),
-                        decoration: BoxDecoration(
-                          color: Colors.red,
-                          borderRadius: BorderRadius.circular(20),
                         ),
                       ),
                     ],

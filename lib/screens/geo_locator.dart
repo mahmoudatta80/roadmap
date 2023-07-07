@@ -32,7 +32,6 @@ class _DetermineMyLocationState extends State<DetermineMyLocation> {
 
   Future<Position> getPosition() async{
     myPosition = await Geolocator.getCurrentPosition();
-    print(myPosition.latitude);
     return myPosition;
   }
 
@@ -51,9 +50,9 @@ class _DetermineMyLocationState extends State<DetermineMyLocation> {
           'Geo Locator',
         ),
       ),
-      body: Center(
+      body: const Center(
         child: Column(
-          children: const [
+          children: [
             Text(
               '',
             ),

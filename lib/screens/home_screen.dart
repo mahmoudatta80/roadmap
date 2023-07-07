@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatelessWidget {
+  const HomeScreen({super.key});
+
 
   @override
   Widget build(BuildContext context) {
@@ -12,15 +14,15 @@ class HomeScreen extends StatelessWidget {
           child: Column(
             children:
             [
-              Image(
+              const Image(
                 image: NetworkImage(
                     'https://thumbs.dreamstime.com/z/collection-take-away-foil-boxes-healthy-food-set-containers-meals-top-view-free-copy-space-164637874.jpg',
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 30,
               ),
-              Text(
+              const Text(
                   'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic.',
                 style: TextStyle(
                   fontSize: 17,
@@ -29,7 +31,7 @@ class HomeScreen extends StatelessWidget {
                   height: 1.5,
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 30,
               ),
               Row(
@@ -38,7 +40,7 @@ class HomeScreen extends StatelessWidget {
                   Expanded(
                     child: Container(
                       height: 100,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         image: DecorationImage(
                             image: AssetImage(
                               'assets/images/food.png',
@@ -49,7 +51,7 @@ class HomeScreen extends StatelessWidget {
                   Expanded(
                     child: Container(
                       height: 100,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         image: DecorationImage(
                             image: AssetImage(
                               'assets/images/meal.png',

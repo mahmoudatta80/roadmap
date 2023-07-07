@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class TodoScreen extends StatelessWidget {
+  const TodoScreen({super.key});
+
 
   @override
   Widget build(BuildContext context) {
@@ -11,7 +13,7 @@ class TodoScreen extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Colors.blue[600],
         elevation: 0,
-        title: Text(
+        title: const Text(
           'Todo List',
           style: TextStyle(
             fontSize: 20,
@@ -35,26 +37,26 @@ class TodoScreen extends StatelessWidget {
                         children:
                         [
                           Text(
-                              '${titles[index]}',
-                            style: TextStyle(
+                              titles[index],
+                            style: const TextStyle(
                               fontSize: 20,
                               fontWeight: FontWeight.w700,
                               color: Colors.white,
                             ),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 3,
                           ),
                           Text(
                               '${times[index]} AM',
-                            style: TextStyle(
+                            style: const TextStyle(
                               fontSize: 15,
                               color: Colors.white,
                             ),
                           ),
                         ],
                       ),
-                      Spacer(),
+                      const Spacer(),
                       IconButton(
                         onPressed: ()
                         {
@@ -63,10 +65,10 @@ class TodoScreen extends StatelessWidget {
                               context: context,
                               builder: (context) {
                                 return AlertDialog(
-                                  title: Text(
+                                  title: const Text(
                                     'Delete',
                                   ),
-                                  content: Text(
+                                  content: const Text(
                                     'Are you sure , you wanna delete this item',
                                   ),
                                   actions:
@@ -75,7 +77,7 @@ class TodoScreen extends StatelessWidget {
                                     {
                                       Navigator.of(context).pop();
                                     },
-                                    child: Text(
+                                    child: const Text(
                                       'Cancel',
                                     ),
                                     ),
@@ -84,7 +86,7 @@ class TodoScreen extends StatelessWidget {
                                     {
                                       Navigator.of(context).pop();
                                     },
-                                      child: Text(
+                                      child: const Text(
                                         'Yes',
                                       ),
                                     ),
@@ -93,7 +95,7 @@ class TodoScreen extends StatelessWidget {
                               },
                           );
                         },
-                        icon: Icon(
+                        icon: const Icon(
                           Icons.delete_forever_outlined,
                           size: 25,
                           color: Colors.white,
@@ -101,7 +103,7 @@ class TodoScreen extends StatelessWidget {
                       ),
                     ],
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 13,
                   ),
                 ],

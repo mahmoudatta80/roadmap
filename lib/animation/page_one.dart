@@ -2,8 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:roadmap/animation/page_three.dart';
 
-mmmmmmmmmmmmmm
-
 class PageOne extends StatefulWidget {
   const PageOne({Key? key}) : super(key: key);
 
@@ -29,12 +27,10 @@ class _PageOneState extends State<PageOne> with SingleTickerProviderStateMixin {
     ).animate(_controller!)
       ..addStatusListener(
         (status) {
-          print(status);
         },
       )
       ..addListener(() {
         setState(() {});
-        print(_animation!.value);
       });
     _controller!.forward();
     super.initState();
@@ -69,7 +65,7 @@ class _PageOneState extends State<PageOne> with SingleTickerProviderStateMixin {
                       onPressed: () {
                         Navigator.of(context).push(
                           MaterialPageRoute(
-                            builder: (context) => PageThree(),
+                            builder: (context) => const PageThree(),
                           ),
                         );
                       },

@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
-import 'package:roadmap/main.dart';
 import 'package:roadmap/state_management/user_information.dart';
 import 'package:roadmap/state_management/welcome.dart';
 
@@ -163,12 +162,11 @@ class Register extends StatelessWidget {
                           onPressed: () {
                             if(formKey.currentState!.validate()) {
                               value.inf(nameController.text, emailController.text, numberController.text, passwordController.text, imageController.text);
-                              print(value.name);
                               Navigator.of(context).push(
-                                MaterialPageRoute(builder: (context) => Welcome(),),
+                                MaterialPageRoute(builder: (context) => const Welcome(),),
                               );
                             }else {
-                              return null;
+                              return;
                             }
                           },
                           child: const Text(

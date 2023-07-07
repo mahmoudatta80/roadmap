@@ -22,7 +22,6 @@ class _NewTestState extends State<NewTest> {
     instance
         .get()
         .then((value) {
-      print(value.data()!['isOpen']);
     });
     super.initState();
   }
@@ -31,19 +30,19 @@ class _NewTestState extends State<NewTest> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('first'),
+        title: const Text('first'),
       ),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Text('first App'),
+          const Text('first App'),
           IconButton(
             onPressed: () {
               instance.update({
                 'isOpen': false,
               });
             },
-            icon: Icon(
+            icon: const Icon(
               Icons.remove,
             ),
           ),
@@ -53,7 +52,7 @@ class _NewTestState extends State<NewTest> {
                 'isOpen': true,
               });
             },
-            icon: Icon(
+            icon: const Icon(
               Icons.add,
             ),
           ),

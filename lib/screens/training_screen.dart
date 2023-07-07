@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class TrainingScreen extends StatelessWidget {
+  const TrainingScreen({super.key});
+
 
   @override
   Widget build(BuildContext context) {
@@ -15,8 +17,8 @@ class TrainingScreen extends StatelessWidget {
           ),
           centerTitle: true,
         ),
-        body: Column(
-          children: const [
+        body: const Column(
+          children: [
             TabBar(
               tabs: [
                 Tab(

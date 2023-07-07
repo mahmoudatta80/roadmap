@@ -55,7 +55,7 @@ class DbView extends StatelessWidget {
                 IconButton(
                   onPressed: () {
                     Navigator.of(context).push(MaterialPageRoute(
-                      builder: (context) => DbSecondView(),
+                      builder: (context) => const DbSecondView(),
                     ));
                   },
                   icon: const Icon(Icons.arrow_forward_ios_outlined),

@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class RegisterScreen extends StatelessWidget {
+  const RegisterScreen({super.key});
+
 
   @override
   Widget build(BuildContext context) {
@@ -13,9 +15,9 @@ class RegisterScreen extends StatelessWidget {
               height: 180,
               width: double.infinity,
               color: Colors.cyanAccent,
-              child: Align(
+              child: const Align(
                 alignment: Alignment.topLeft,
-                child: const Padding(
+                child: Padding(
                   padding: EdgeInsets.all(14.0),
                   child: Icon(
                     Icons.menu,
@@ -94,9 +96,9 @@ class RegisterScreen extends StatelessWidget {
                             ),
                             label: const Padding(
                               padding: EdgeInsets.symmetric(horizontal: 12,),
-                              child: const Text(
+                              child: Text(
                                 'Confirm Password',
-                                style: const TextStyle(
+                                style: TextStyle(
                                   color: Colors.grey,
                                   fontWeight: FontWeight.w500,
                                 ),

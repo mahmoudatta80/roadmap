@@ -18,7 +18,7 @@ class _DrobButState extends State<DrobBut> {
         children: [
           DropdownButton<int>(
               icon: const Icon(Icons.arrow_drop_down_circle_rounded,
-                  color: const Color(0xff1f7a8c)),
+                  color: Color(0xff1f7a8c)),
               value: selectedItem,
               items: const [
                 DropdownMenuItem(
